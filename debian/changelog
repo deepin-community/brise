@@ -1,8 +1,10 @@
-brise (0.38.20210909-2+u001) UNRELEASED; urgency=medium
+brise (0.38.20210909-2deepin) unstable; urgency=medium
 
-  * update
 
- -- Debian Input Method Team <debian-input-method@lists.debian.org>  Sun, 24 Apr 2022 17:38:44 +0800
+  [ LiChengGang ]
+  * update changelog 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Thu, 23 Feb 2023 17:02:34 +0800
 
 brise (0.38.20210909-2) unstable; urgency=medium
 
