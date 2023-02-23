@@ -1,0 +1,50 @@
+# rime-prelude
+/usr/share/rime-data/default.yaml
+/usr/share/rime-data/key_bindings.yaml
+/usr/share/rime-data/punctuation.yaml
+/usr/share/rime-data/symbols.yaml
+# rime-essay
+/usr/share/rime-data/essay.txt
+# librime-data-array30
+usr/share/rime-data/array30*
+# librime-data-bopomofo
+usr/share/rime-data/bopomofo*
+usr/share/rime-data/build/bopomofo*
+# librime-data-cangjie5
+usr/share/rime-data/build/cangjie5*
+usr/share/rime-data/cangjie5*
+# librime-data-combo-pinyin
+usr/share/rime-data/combo_pinyin*
+# librime-data-double-pinyin
+usr/share/rime-data/double_pinyin*
+# librime-data-emoji
+usr/share/rime-data/emoji*
+usr/share/rime-data/customize.recipe.yaml
+usr/share/rime-data/opencc/emoji*
+# librime-data-ipa-xsampa
+usr/share/rime-data/ipa_xsampa*
+# librime-data-ipa-yunlong
+usr/share/rime-data/ipa_yunlong*
+# librime-data-luna-pinyin
+usr/share/rime-data/build/luna_pinyin*
+usr/share/rime-data/build/luna_quanpin*
+usr/share/rime-data/luna_pinyin*
+usr/share/rime-data/luna_quanpin*
+# librime-data-pinyin-simp
+usr/share/rime-data/pinyin_simp*
+# librime-data-quick5
+usr/share/rime-data/quick5*
+# librime-data-sampheng
+usr/share/rime-data/sampheng*
+# librime-data-stroke
+usr/share/rime-data/build/stroke*
+usr/share/rime-data/stroke*
+# librime-data-terra-pinyin
+usr/share/rime-data/build/terra_pinyin*
+usr/share/rime-data/terra_pinyin*
+# librime-data-wubi
+usr/share/rime-data/wubi*
+# librime-data-wugniu
+usr/share/rime-data/wugniu*
+# librime-data-zyenpheng
+usr/share/rime-data/zyenpheng*

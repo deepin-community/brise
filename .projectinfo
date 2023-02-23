@@ -1,0 +1,1 @@
+{"project":"brise","type":"","version":"0.38.2","hierarchy":"base","priority":"","maintainer":"","packager":"","builddeps":" debhelper-compat (= 13), kyotocabinet-utils, librime-bin (\u003e= 1.3~), ","homepage":" https://github.com/rime/brise","git":"https://salsa.debian.org/debian/brise.git"}
