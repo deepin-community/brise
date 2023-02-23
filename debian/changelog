@@ -1,5 +1,164 @@
-template-repository (1.0-1) unstable; urgency=medium
+brise (0.38.20210909-2+u001) UNRELEASED; urgency=medium
 
-  * Initial release
+  * update
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Debian Input Method Team <debian-input-method@lists.debian.org>  Sun, 24 Apr 2022 17:38:44 +0800
+
+brise (0.38.20210909-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop package librime-data-emoji, provided by rime-data-emoji.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 26 Feb 2022 10:19:26 -0500
+
+brise (0.38.20210909-1) unstable; urgency=high
+
+  * Team upload.
+  * Upload rime-emoji snapshot to 2021-09-09.
+  * Split most RIME subprojects into individual packages (rime-*).
+    + Drop superseded binary packages.
+    + Update binary package dependency accordingly.
+    + Convert librime-data into metapackage since it is now empty.
+    + Let librime-data-emoji provides rime-data-emoji before
+      src:rime-emoji passes NEW review.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 17 Feb 2022 17:02:25 -0500
+
+brise (0.38.20190120-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 12 Jan 2021 11:17:05 -0500
+
+brise (0.38.20190120-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream snapshot.
+    - The new cantonese files were not included.
+    + Add librime-data-ipa-yunlong package for IPA yunlong schema.
+  * debian/copyright: Refreshed with updated data.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 28 Dec 2020 00:05:59 -0500
+
+brise (0.38.20180515-3) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild for Debian Buster and librime 1.4.3.
+  * debian/control:
+    + Bump Standards-Version to 4.4.1 (no changes needed).
+    + Bump debhelper compat to v12.
+    + Use "Rules-Requires-Root: no".
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 18 Dec 2019 13:13:07 -0500
+
+brise (0.38.20180515-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.1.5. (no changes needed)
+  * Fix the bug that users cannot save custom configurations
+    by not installing /usr/share/rime-data/user.yaml and
+    /usr/share/rime-data/build/default.yaml.
+    Closes: #902983.
+
+ -- Boyuan Yang <073plan@gmail.com>  Thu, 05 Jul 2018 09:18:23 +0800
+
+brise (0.38.20180515-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release after migration to plum and librime 1.3.
+    - Fix broken config for opencc in luna_pinyin_tw. (Closes: #877714).
+  * Fix FTBFS by limiting required librime version to 1.3+. (Closes: #893386).
+  * Use debian-input-method@lists.debian.org as maintainer address.
+    (Closes: #899883).
+  * debian: Apply "wrap-and-sort -abst".
+  * d/control: Bump debhelper compat to v11.
+  * d/control: Bump Standards-Version to 4.1.4.
+  * d/control: Use Salsa repo for Vcs fields.
+  * d/control: Set package section to "libs".
+  * d/control: Drop transitional packages librime-data-stroke5,
+    librime-data-stroke-simp, librime-data-triungkox3p.
+    (Closes: #878230).
+  * d/control: Adopt upstream preset list and add three more packages into
+    Recommends list: bopomofo, stroke and terra-pinyin.
+  * d/control: Let all split librime-data-* packages depend on librime-data
+    since librime-data provides some essential common files.
+  * d/copyright: Refresh and rewrite all copyright information.
+  * d/watch: Refresh GitHub project URL.
+  * d/rules: Use "dh_missing --fail-missing".
+  * d/install: Refresh install file list for jyutping and luna-pinyin.
+  * d/patches: Add a patch to fix bashism in plum/Makefile.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sat, 23 Jun 2018 09:51:24 +0800
+
+brise (0.35-1) unstable; urgency=medium
+
+  * New upstream release.
+  * librime-data ships essay.txt instead of essay.kct now.
+  * Build-deps on librime-bin >= 1.2.
+
+ -- Guo Yixuan (郭溢譞) <culu.gyx@gmail.com>  Thu, 24 Jul 2014 17:36:29 -0400
+
+brise (0.32-2) UNRELEASED; urgency=medium
+
+  * Support building with librime 1.2, which needs essay.txt.
+
+ -- Guo Yixuan (郭溢譞) <culu.gyx@gmail.com>  Mon, 14 Jul 2014 18:13:45 -0400
+
+brise (0.32-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Standard version bumped to 3.9.5, no changes needed.
+  * Added Provides for renaming, for:
+    - librime-data-stroke and
+    - librime-data-sampheng.
+  * Added transitional packages for:
+    - librime-data-stroke5,
+    - librime-data-stroke-simp, and
+    - librime-data-triungkox3p.
+  * Added myself to uploaders.
+  * Updated debian/copyright.
+
+ -- Guo Yixuan (郭溢譞) <culu.gyx@gmail.com>  Sun, 29 Jun 2014 14:18:07 -0400
+
+brise (0.30-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Build depends on librime-bin >= 1.0.
+  * Added a new package librime-data-stroke, and removed
+    librime-data-stroke5 and librime-data-stroke-simp.
+  * Added a new package librime-data-sampheng in place of
+    librime-data-triungkox3p.
+  * Build all the schemas in override_dh_auto_build, and
+    dropped all the patches.
+
+ -- Guo Yixuan (郭溢譞) <culu.gyx@gmail.com>  Sun, 11 May 2014 18:32:53 -0400
+
+brise (0.22-1) unstable; urgency=low
+
+  * Imported Upstream version 0.22
+  * Add kyotocabinet-utils to build-dep
+  * Update Git url to be canonical.
+
+ -- YunQiang Su <wzssyqa@gmail.com>  Fri, 11 Oct 2013 14:03:31 +0800
+
+brise (0.18-1) unstable; urgency=low
+
+  [ Aron Xu ]
+  * Correct Vcs-* address
+
+  [ YunQiang Su ]
+  * Imported Upstream version 0.18 and refresh patches.
+  * add new librime-data-{array30,emoji,soutzoe} packages.
+  * install symbols.yaml to librime-data.
+  * Add debian/watch file.
+  * Build depends on librime with version >= 0.9.8.
+  * Add myself to Uploaders.
+
+ -- YunQiang Su <wzssyqa@gmail.com>  Thu, 07 Feb 2013 19:52:48 +0800
+
+brise (0+git20120901-1) unstable; urgency=low
+
+  * Initial release (Closes: #677341).
+
+ -- Qijiang Fan <fqj1994@gmail.com>  Sun, 02 Sep 2012 18:04:26 +0800

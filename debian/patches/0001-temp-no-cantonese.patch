@@ -1,0 +1,33 @@
+From: Boyuan Yang <byang@debian.org>
+Date: Sun, 27 Dec 2020 23:51:27 -0500
+Subject: temp no cantonese
+
+Forwarded: not-needed
+---
+ plum/extra-packages.bat  | 1 -
+ plum/extra-packages.conf | 1 -
+ 2 files changed, 2 deletions(-)
+
+diff --git a/plum/extra-packages.bat b/plum/extra-packages.bat
+index 0898e00..31220b5 100644
+--- a/plum/extra-packages.bat
++++ b/plum/extra-packages.bat
+@@ -1,6 +1,5 @@
+ set package_list=%package_list%^
+  array^
+- cantonese^
+  combo-pinyin^
+  double-pinyin^
+  emoji^
+diff --git a/plum/extra-packages.conf b/plum/extra-packages.conf
+index 6742802..fb5b056 100755
+--- a/plum/extra-packages.conf
++++ b/plum/extra-packages.conf
+@@ -2,7 +2,6 @@
+ 
+ package_list+=(
+     array
+-    cantonese
+     combo-pinyin
+     double-pinyin
+     emoji

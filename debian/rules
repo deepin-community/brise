@@ -1,4 +1,14 @@
 #!/usr/bin/make -f
 
+
 %:
 	dh $@
+
+execute_before_dh_missing:
+	# Explicitly remove config files to force librime not
+	# reading / writing them
+	rm -f debian/tmp/usr/share/rime-data/user.yaml
+	rm -f debian/tmp/usr/share/rime-data/build/default.yaml
+
+execute_after_dh_auto_build:
+	rime_deployer --build output

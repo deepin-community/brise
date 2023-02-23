@@ -1,0 +1,26 @@
+  There are several data files in this source package, the license of
+  them might be something confusing many people. These data files were
+  having their patents, but they were either released by the original
+  author (and the patent holder) into Public Domain (Cangjie), or the
+  patents had expired for several years. We are providing clean-room
+  re-generated data files using their ideas (which is not copyrightable,
+  and obviously not infringing expired patents).
+
+  * Wubi: CN85100837, expired on July, 22th, 2000.
+	- Ref (Chinese): Search 85100837 at http://www.sipo.gov.cn/xxcp/
+	- Ref (Chinese): http://www.soopat.com/Patent/85100837
+  * Cangjie: 027984, expired in 1989, released to public domain by
+    original author in 1982.
+    - Ref (Chinese): http://cbflabs.com/?id=12
+  * Jyutping: Public Domain, developed and released by Linguistic
+    Society of Hong Kong (LSHK) in 1993.
+    - Ref (Chinese): http://www.lshk.org/cantonese.php
+  * Quick: directly derived from Cangjie* and put into Public Domain.
+  * scj6: GPL-3, also referenced in debian/copyright
+    - Ref: http://download.scj2000.net/src/COPYING
+  * Stroke5: GPL-2+, also referenced in debian/copyright
+    - Ref: http://code.google.com/p/ibus/wiki/ChineseTableLicenseAuditing
+  * Wu: GPL-2+, also referenced in debian/copyright
+    - Ref: http://input.foruto.com/wu/index.html
+ 
+ Reference: http://code.google.com/p/ibus/wiki/ChineseTableLicenseAuditing

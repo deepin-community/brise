@@ -1,15 +1,132 @@
-Source: template-repository
-Section: unknown
+Source: brise
+Section: libs
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Uploaders:
+ Qijiang Fan <fqj1994@gmail.com>,
+ YunQiang Su <syq@debian.org>,
+ Guo Yixuan (郭溢譞) <culu.gyx@gmail.com>,
+Build-Depends:
+ debhelper-compat (= 13),
+ kyotocabinet-utils,
+ librime-bin (>= 1.3~),
+Rules-Requires-Root: no
+Standards-Version: 4.6.0
+Homepage: https://github.com/rime/brise
+Vcs-Git: https://salsa.debian.org/debian/brise.git
+Vcs-Browser: https://salsa.debian.org/debian/brise
 
-Package: template-repository
+Package: librime-data
+Architecture: all
+Section: metapackages
+Depends:
+ rime-essay,
+ rime-prelude,
+ ${misc:Depends},
+Recommends:
+ librime-bin (>= 1.7~),
+ rime-data-bopomofo,
+ rime-data-cangjie5,
+ rime-data-luna-pinyin,
+ rime-data-stroke,
+ rime-data-terra-pinyin,
+Suggests:
+ rime-data-array30,
+ rime-data-combo-pinyin,
+ rime-data-double-pinyin,
+ rime-data-emoji,
+ rime-data-ipa-xsampa,
+ rime-data-ipa-yunlong,
+ rime-data-pinyin-simp,
+ rime-data-quick5,
+ rime-data-sampheng,
+ rime-data-wubi,
+ rime-data-wugniu,
+ rime-data-zyenpheng,
+ librime-data-stenotype,
+ librime-data-scj6,
+ librime-data-soutzoe,
+ librime-data-jyutping,
+Description: Rime Input Method Engine, the schema data
+ RIME is the acronym of Rime Input Method Engine.
+ .
+ RIME is a lightweight, extensible input method engine supporting various input
+ schematas including glyph-based input methods, romanization-based input methods
+ as well as those for Chinese dialects. It has the ability to compose phrases
+ and sentences intelligently and provide very accurate traditional Chinese
+ output. RIME's cross-platform core library is written in C++, and can work
+ consistently on different platforms with OS-specific wrappers.
+ .
+ This package provides the schema data of RIME.
+
+Package: librime-data-jyutping
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends:
+ librime-data,
+ rime-data-luna-pinyin,
+ ${misc:Depends},
+Description: RIME schema data - jyutping (a.k.a Cantonese)
+ RIME is the acronym of Rime Input Method Engine.
+ .
+ RIME is a lightweight, extensible input method engine supporting various input
+ schematas including glyph-based input methods, romanization-based input methods
+ as well as those for Chinese dialects. It has the ability to compose phrases
+ and sentences intelligently and provide very accurate traditional Chinese
+ output. RIME's cross-platform core library is written in C++, and can work
+ consistently on different platforms with OS-specific wrappers.
+ .
+ This package provides the jyutping schema data of RIME.
+
+Package: librime-data-scj6
+Architecture: any
+Depends:
+ librime-data,
+ rime-data-luna-pinyin,
+ ${misc:Depends},
+Description: RIME schema data - scj6 (a.k.a Fast Cangjie IM 6)
+ RIME is the acronym of Rime Input Method Engine.
+ .
+ RIME is a lightweight, extensible input method engine supporting various input
+ schematas including glyph-based input methods, romanization-based input methods
+ as well as those for Chinese dialects. It has the ability to compose phrases
+ and sentences intelligently and provide very accurate traditional Chinese
+ output. RIME's cross-platform core library is written in C++, and can work
+ consistently on different platforms with OS-specific wrappers.
+ .
+ This package provides the scj6 schema data of RIME.
+
+Package: librime-data-soutzoe
+Architecture: any
+Depends:
+ librime-data,
+ rime-data-luna-pinyin,
+ ${misc:Depends},
+Description: RIME schema data - soutzoe
+ RIME is the acronym of Rime Input Method Engine.
+ .
+ RIME is a lightweight, extensible input method engine supporting various input
+ schematas including glyph-based input methods, romanization-based input methods
+ as well as those for Chinese dialects. It has the ability to compose phrases
+ and sentences intelligently and provide very accurate traditional Chinese
+ output. RIME's cross-platform core library is written in C++, and can work
+ consistently on different platforms with OS-specific wrappers.
+ .
+ This package provides the soutzoe schema data of RIME.
+
+Package: librime-data-stenotype
+Architecture: any
+Depends:
+ librime-data,
+ rime-data-luna-pinyin,
+ ${misc:Depends},
+Description: RIME schema data - stenotype
+ RIME is the acronym of Rime Input Method Engine.
+ .
+ RIME is a lightweight, extensible input method engine supporting various input
+ schematas including glyph-based input methods, romanization-based input methods
+ as well as those for Chinese dialects. It has the ability to compose phrases
+ and sentences intelligently and provide very accurate traditional Chinese
+ output. RIME's cross-platform core library is written in C++, and can work
+ consistently on different platforms with OS-specific wrappers.
+ .
+ This package provides the stenotype schema data of RIME.
