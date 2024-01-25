@@ -1,10 +1,21 @@
-brise (0.38.20210909-2deepin) unstable; urgency=medium
+brise (0.38.20210909-4) unstable; urgency=medium
 
+  [ Debian Janitor ]
+  * Update watch file format version to 4.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
 
-  [ LiChengGang ]
-  * update changelog 
+  [ Boyuan Yang ]
+  * Drop package librime-data-scj6; now use rime-data-scj6.
 
- -- LiChengGang <lichenggang@uniontech.com>  Thu, 23 Feb 2023 17:02:34 +0800
+ -- Boyuan Yang <byang@debian.org>  Sat, 23 Sep 2023 17:48:03 -0400
+
+brise (0.38.20210909-3) unstable; urgency=medium
+
+  * Team upload.
+  * Drop package librime-data-soutzoe, provided by rime-data-soutzoe.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 06 Jun 2022 15:24:57 -0400
 
 brise (0.38.20210909-2) unstable; urgency=medium
 
