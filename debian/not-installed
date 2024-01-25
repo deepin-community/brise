@@ -36,6 +36,10 @@ usr/share/rime-data/pinyin_simp*
 usr/share/rime-data/quick5*
 # librime-data-sampheng
 usr/share/rime-data/sampheng*
+# librime-data-scj6
+usr/share/rime-data/scj6*
+# librime-data-soutzoe
+usr/share/rime-data/soutzoe*
 # librime-data-stroke
 usr/share/rime-data/build/stroke*
 usr/share/rime-data/stroke*
